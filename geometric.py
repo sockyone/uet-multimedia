@@ -35,9 +35,9 @@ def _approxEntropy(k, p = 1/2):
 """
     approxEntropy tính được xấp xỉ entropy của nguồn tin geometric bởi entropy của nguồn tin này là có giới hạn,
     bằng cách tăng dần số n, ta có thể dùng hàm này để tính gần đúng giá trị entropy.
-    thực nghiệm: approxEntropy(500) ~= approxEntropy(700) = 0.7695572368844232
+    thực nghiệm: approxEntropy(500) ~= approxEntropy(700) = 2
 """
 def approxEntropy(n, p = 1/2):
     return _approxEntropy(n, p)
 
-# print(sumProb(1000))
+print(approxEntropy(500))
