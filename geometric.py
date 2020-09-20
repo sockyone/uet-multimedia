@@ -40,4 +40,4 @@ def _approxEntropy(k, p = 1/2):
 def approxEntropy(n, p = 1/2):
     return _approxEntropy(n, p)
 
-print(sumProb(1000))
+# print(sumProb(1000))
