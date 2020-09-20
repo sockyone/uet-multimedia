@@ -5,7 +5,7 @@ def c(N, k):
 
 
 def prob(n, p, N):
-    return c(N, n) * pow(p, N)
+    return c(N, n) * pow(p, n) * pow(1 - p, N - n)
 
 def infoMeasure(n, p, N):
     return -math.log2(prob(n, p, N))
