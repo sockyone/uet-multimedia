@@ -29,4 +29,4 @@ def approxEntropy(n, p, r):
     return _approxEntropy(n, p, r)
 
 
-# print(approxEntropy(500, 1/2, 5))
+# print(sumProb(500, 1/2, 5))

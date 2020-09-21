@@ -27,3 +27,5 @@ def _approxEntropy(k, p, N):
 
 def approxEntropy(n, p, N):
     return _approxEntropy(n, p, N)
+
+# print(prob(5, 1/3, 6))
