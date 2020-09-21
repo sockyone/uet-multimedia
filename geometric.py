@@ -7,7 +7,7 @@ import math
 #         return _info(k-1, p) + pow(p, k) * math.log(pow(1/p, k))
 
 def prob(n, p = 1/2):
-    return pow(p, n)
+    return pow(1 - p, n - 1) * p
 
 def infoMeasure(n, p = 1/2):
     return -math.log2(prob(n, p))
@@ -40,4 +40,4 @@ def _approxEntropy(k, p = 1/2):
 def approxEntropy(n, p = 1/2):
     return _approxEntropy(n, p)
 
-print(approxEntropy(500))
+# print(sumProb(500))
