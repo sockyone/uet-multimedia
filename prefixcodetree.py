@@ -40,7 +40,7 @@ class PrefixCodeTree:
 
     # bytes must be an array of bytes
     def decode(self, bytes, length):
-        bits = ''.join(format(byte, '08b') for byte in b'\xd2\x9f\x20')[:length]
+        bits = ''.join(format(byte, '08b') for byte in bytes)[:length]
 
         decoded = ''
 
