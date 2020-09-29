@@ -21,7 +21,7 @@ class PrefixCodeTree:
                 return self.getNodeLeft()
             return self.getNodeRight()
 
-        def setSymbol(self, value):
+        def setSymbol(self, symbol):
             self.symbol = symbol
         
         def getSymbol(self):
